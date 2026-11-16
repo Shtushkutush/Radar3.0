@@ -115,7 +115,7 @@ public final class RadarRenderer {
         Label batteryLabel=labelAt(hx,hy,battery,2.05f, -1);
         Label stepLabel=labelAt(mx,my,outdoor,1.9f, 1);
         if(overlaps(batteryLabel,stepLabel)){
-           stepLabel=labelAt(mx,my,outdoor,1.9f,-1);
+            stepLabel=labelAt(mx,my,outdoor,1.9f,-1);
             if(overlaps(batteryLabel,stepLabel)) stepLabel.shiftY(stepLabel.y<=batteryLabel.y?-17:17);
         }
         drawLabel(canvas,hx,hy,batteryLabel,baseGreen,styleIntensity,hourPulse,ambient);
